@@ -1,0 +1,37 @@
+Change log for the AL Translation Tool:
+
+2025-08-29 : Update to version 16   JTH
+                Update to BC26 - Lots of small syntactic changes etc.
+                Auto-populate language iso-codes
+                Add support for "Equivalent language" 
+                Add OpenAI API Translation option     
+                Add support for pre-translate terms   
+                Add support for importing and exporting complete project with all language files 
+                Removed NAV 2018 support
+                Changed all imports to be code-based instead of XMLPorts
+
+
+2019-07-02 Released the first Beta. PBA
+        Remaining Issues:
+        - xmlport 78602 "BAC Import Translation Target": not exporting notes correctly. Works anyway
+        - page 78608 "BAC Gen. Translation Terms"      : Not possible to select language filter on page
+        - page 78607 "BAC Translation Setup"           : Only the free Google translate - add more optons later
+
+2019-07-09 Hotfix 1. PBA
+        - Changed all file names to comply with standard
+        - Added warrenty txt file
+        - page 78608 "BAC Gen. Translation Terms"      : Added filter on page
+                                                         Changed Source Table
+        - page 78609 "BAC About AL Translation Tool"   : Added About page
+        - page 78610 "BAC Logo FactBox"                : Added Logo FactBox
+
+2019-07-21 Hotfix 2. PBA
+        - xmlport 78603 "BAC Import Trans. Source 2018": Added support for NAV 2018
+        - xmlport 78604 "BAC Export Trans Target 2018" : Added support for NAV 2018
+        - xmlport 78605 "BAC Import Trans Target 2018" : Added support for NAV 2018
+        - table 78600 "BAC Translation Project"   : Added field for NAV version
+        - table 78601 "BAC Translation Source"         : Added field "Max Width" for NAV 2018
+        - table 78602 "BAC Translation Target"         : Added field "Max Width" for NAV 2018
+        - page 78600 "BAC Trans Project List"          : Added support for NAV 2018
+        - page 78602 "BAC Target Language List"        : Added support for NAV 2018
+        - page 78603 "BAC Translation Target List"     : Added support for NAV 2018

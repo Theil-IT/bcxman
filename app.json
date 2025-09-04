@@ -1,0 +1,23 @@
+{
+  "id": "ac8df738-377a-476a-be01-1706963fc307",
+  "name": "BCXMAN",
+  "publisher": "Theil IT Management",
+  "version": "16.0.0.0",
+  "brief": "AL Translate Tool for Dynamics 365 BC",
+  "description": "Open-Source BCXMAN. Source code can be located at https://github.com/Theil-IT/bcxman.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "https://github.com/Theil-IT/bcxman",
+  "logo": "./Images/Translate.jpg",  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "26.0.0.0",
+  "idRanges": [
+    {
+      "from": 78600,
+      "to": 78699
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://github.com/Theil-IT/bcxman/blob/main/.assets/Setup.md"
+}

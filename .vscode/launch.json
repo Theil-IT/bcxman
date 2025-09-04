@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+         {
+            "type":  "al",
+            "request":  "launch",
+            "name":  "Local Sandbox (bcxman)",
+            "server":  "http://bcxman",
+            "serverInstance":  "BC",
+            "breakOnRecordWrite": "None",
+            "breakOnError": "None",
+            "port":  7049,
+            "tenant":  "default",
+            "authentication":  "UserPassword",
+            "schemaUpdateMode": "ForceSync",
+            "dependencyPublishingOption": "Default"
+        },
+        {
+            "type":  "al",
+            "request":  "launch",
+            "name":  "Local Sandbox (bc26dev)",
+            "server":  "http://bc26dev",
+            "serverInstance":  "BC",
+            "breakOnRecordWrite": "None",
+            "breakOnError": "None",
+            "port":  7049,
+            "tenant":  "default",
+            "authentication":  "UserPassword",
+            "schemaUpdateMode": "ForceSync",
+            "dependencyPublishingOption": "Default"
+        },
+                {
+            "name": "Microsoft cloud sandbox - MarketTest",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "MarketTest",
+            "breakOnError": "None",
+            "launchBrowser": true,
+            "schemaUpdateMode": "ForceSync",
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]
+}

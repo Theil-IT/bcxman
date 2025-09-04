@@ -1,0 +1,1169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="BCXMAN">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 4003461545 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base Translation Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Method 24208765 - NamedType 595387682" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy the Target to all other instances?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Method UpdateAllTargetInstances - NamedType QuestionTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 2377891091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>al-object-target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field al-object-target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 3070320983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <note from="Developer" annotates="general" priority="2"> </note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 1517187518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Width</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Max Width - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 3419514631 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Occurrencies</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Occurrencies - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 2965272548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Project Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 297530546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>size-unit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field size-unit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 2397723431 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Source - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 1125457875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 101975653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Target Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 651531573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language ISO code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Target Language ISO code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 2105785296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trans-Unit Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Trans-Unit Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 2103044874 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field Translate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 4233170439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TranslateAttr</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field TranslateAttr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4003461545 - Field 3390996193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>xml:space</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BAC Base Translation Target - Field xml:space - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 811235024 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BAC Base Translation Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Base Translation Notes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 811235024 - Field 361882995 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Annotates</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Base Translation Notes - Field Annotates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 811235024 - Field 1958180954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>From</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Base Translation Notes - Field From - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 811235024 - Field 2898143332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Note</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Base Translation Notes - Field Note - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 811235024 - Field 4130293374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Priority</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Base Translation Notes - Field Priority - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 811235024 - Field 2965272548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Base Translation Notes - Field Project Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 811235024 - Field 2105785296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trans-Unit Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Base Translation Notes - Field Trans-Unit Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2964301058 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General Translation Term</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Gen. Translation Term - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2964301058 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Gen. Translation Term - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2964301058 - Field 101975653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Gen. Translation Term - Field Target Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2964301058 - Field 605026954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Term</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Gen. Translation Term - Field Term - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2964301058 - Field 1358710565 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Gen. Translation Term - Field Translation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Field 4191687474 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Equivalent Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Field Equivalent Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Field 2757517210 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Equivalent Language ISO code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Field Equivalent Language ISO code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Field 804481195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Field File Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Field 2965272548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Field Project Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Field 904306078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Field Project Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Field 1976418201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Field Source Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Field 702113209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Language ISO code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Field Source Language ISO code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Field 101975653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Field Target Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1027800030 - Field 651531573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language ISO code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Target Language - Field Target Language ISO code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1141405611 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translate Cue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Cue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1141405611 - Field 2452131096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finished Projects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Cue - Field Finished Projects - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1141405611 - Field 2880270744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Month Date Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Cue - Field Month Date Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1141405611 - Field 4195637998 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Projects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Cue - Field Open Projects - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1141405611 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Cue - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1141405611 - Field 3483219183 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Cue - Field Project Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1141405611 - Field 690119676 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Projects this Month</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Cue - Field Projects this Month - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1141405611 - Field 213221493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Released Projects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Cue - Field Released Projects - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1141405611 - Field 490087360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Projects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Cue - Field Total Projects - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3156145571 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BCX Translation Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Notes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3156145571 - Field 361882995 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Annotates</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Notes - Field Annotates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3156145571 - Field 1958180954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>From</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Notes - Field From - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3156145571 - Field 2898143332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Note</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Notes - Field Note - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3156145571 - Field 4130293374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Priority</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Notes - Field Priority - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3156145571 - Field 2965272548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Notes - Field Project Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3156145571 - Field 2105785296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trans-Unit Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Notes - Field Trans-Unit Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Project Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 530092862 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base Translation Imported</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Base Translation Imported - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 2369664869 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Created By</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Created By - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 1407200743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 1179454962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Datatype</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field File Datatype - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 804481195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field File Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 205365381 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAV Version</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field NAV Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 205365381 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dynamics NAV 2018,Dynamics 365 Business Central</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field NAV Version - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 279527421 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OrginalAttr</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field OrginalAttr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 2965272548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Project Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 904306078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Project Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 1976418201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Source Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 702113209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Source Language ISO code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 513339096 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open,Released,Closed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 101975653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Target Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 3844423289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Xliff Version</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Xliff Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2740110745 - Field 3085039909 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Xml Version</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Project - Field Xml Version - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1373268895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1373268895 - Field 348486566 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OpenAI API Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Setup - Field ChatGPT API Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1373268895 - Field 1699278734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ChatGPT Model</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Setup - Field ChatGPT Model - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1373268895 - Field 3205715915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Source Language code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Setup - Field Default Source Language code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1373268895 - Field 1123305005 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Logo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Setup - Field Logo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1373268895 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1373268895 - Field 3602357627 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Nos.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Setup - Field Project Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1373268895 - Field 2873879594 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use ChatGPT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Setup - Field Use ChatGPT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1373268895 - Field 729173796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Free Google Translate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Setup - Field Use Free Google Translate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Source</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 2377891091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>al-object-target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field al-object-target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 3070320983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 1517187518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Width</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field Max Width - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 2965272548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field Project Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 297530546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>size-unit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field size-unit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 2397723431 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field Source - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 2105785296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trans-Unit Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field Trans-Unit Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 4233170439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TranslateAttr</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field TranslateAttr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3740611865 - Field 3390996193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>xml:space</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Source - Field xml:space - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Method 24208765 - NamedType 595387682" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy the Target to all other instances?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Method UpdateAllTargetInstances - NamedType QuestionTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 2377891091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>al-object-target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field al-object-target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 3070320983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 1517187518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Width</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Max Width - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 3419514631 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Occurrencies</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Occurrencies - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 2965272548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Project Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 297530546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>size-unit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field size-unit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 2397723431 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Source - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 1125457875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 101975653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Target Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 651531573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language ISO code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Target Language ISO code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 2105785296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trans-Unit Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Trans-Unit Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 2103044874 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field Translate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 4233170439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TranslateAttr</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field TranslateAttr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3789288805 - Field 3390996193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>xml:space</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Target - Field xml:space - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4266718744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Term</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Term - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4266718744 - Field 3703563327 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apply Pre-Translation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Term - Field Apply Pre-Translation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4266718744 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Term - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4266718744 - Field 2965272548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Term - Field Project Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4266718744 - Field 101975653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Term - Field Target Language - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4266718744 - Field 605026954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Term</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Term - Field Term - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4266718744 - Field 1358710565 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX Translation Term - Field Translation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2114638088 - Method 2451657066 - NamedType 848472796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creating an entry with your own User ID will lock you out of this page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX User Access - Method OnInsert - NamedType ErrorTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2114638088 - Field 2965272548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX User Access - Field Project Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2114638088 - Field 904306078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX User Access - Field Project Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2114638088 - Field 3776794752 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX User Access - Field User Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2114638088 - Field 129688762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BCX User Access - Field User Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2451710750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>About AL Translation Tool</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX About AL Translation Tool - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2451710750 - Control 3363114069 - Property 1968111052" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open-Source AL Translate Tool. Source code can be located at https://github.com/peikba/AL-Translate-Tool.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX About AL Translation Tool - Control About AL Translation Tool - Property InstructionalText</note>
+        </trans-unit>
+        <trans-unit id="Page 2451710750 - Control 3363114069 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>About AL Translation Tool</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX About AL Translation Tool - Control About AL Translation Tool - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1941675510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AL Translation Tool</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX AL Logo FactBox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 398605039 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General Translation Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Gen. Translation Terms - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 398605039 - Control 605026954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the term to hardcode for translation. E.g. 'Journal' must be translated to 'Worksheet'. Every instance of the term will be replaced with the translation.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Gen. Translation Terms - Control Term - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 398605039 - Control 1358710565 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the translation to be inserted for the term. E.g. 'Journal' must be translated to 'Worksheet'. Every instance of the term will be replaced with the translation.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Gen. Translation Terms - Control Translation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 398605039 - Control 12263198 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Gen. Translation Terms - Control LanguageFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4147616972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Languages (Translate Module)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Languages - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Language List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 2885192218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unused</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Export Translation File old - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 756314478 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Translation Files</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Export Translation Files - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 756314478 - Method 1377591017 - NamedType 6722565" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export current language only,Export all languages</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Export Translation Files - Method OnAction - NamedType ChoiceTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 3701812563 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Base Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Import Base Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 3701812563 - Method 1377591017 - NamedType 2652709917" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This will overwrite the Base Translation target for %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Import Base Target - Method OnAction - NamedType DeleteWarningTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 3701812563 - Method 1377591017 - NamedType 3681552984" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The file %1 has been imported into project %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Import Base Target - Method OnAction - NamedType ImportedTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 1246357720 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Import Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 1246357720 - Method 1377591017 - NamedType 2652709917" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This will overwrite existing Translation Target entries for %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Import Target - Method OnAction - NamedType DeleteWarningTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 1246357720 - Method 1377591017 - NamedType 3681552984" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The file %1 has been imported into project %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Import Target - Method OnAction - NamedType ImportedTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 721109500 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Project Terms - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 827500630 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Translation Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2569315228 - Action 2294305842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Target Language List - Action Translation Terms - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2995489176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Projects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Project List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2995489176 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Projects which means projects in process - Released Projects which means sent to customer, but not finished - Finished Projects which means sent to customer and done for now</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Project List - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2995489176 - Action 3778840668 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All Translation Targets</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Project List - Action All Translation Targets - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2995489176 - Action 665049068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Project</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Project List - Action Import Project - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2995489176 - Action 287667028 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Source</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Project List - Action Import Source - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2995489176 - Action 287667028 - Method 1377591017 - NamedType 2652709917" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This will overwrite the Translation source for %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Project List - Action Import Source - Method OnAction - NamedType DeleteWarningTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 2995489176 - Action 287667028 - Method 1377591017 - NamedType 3681552984" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The file %1 has been imported into project %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Project List - Action Import Source - Method OnAction - NamedType ImportedTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 2995489176 - Action 860258460 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Target Languages</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Project List - Action Target Languages - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2995489176 - Action 1374878138 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Source</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Project List - Action Translation Source - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4143761101 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Factbox</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Source Factbox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4143761101 - Control 13756281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Captions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Source Factbox - Control TotalCaptions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4143761101 - Control 1206108245 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Missing Captions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Source Factbox - Control TotalMissingCaptions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4143761101 - Control 4222306506 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Missing Translations</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Source Factbox - Control TotalMissingTranslations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1551736753 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Target Factbox</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Target Factbox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1551736753 - Control 2020531406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instances</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Target Factbox - Control Instances - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1551736753 - Control 13756281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Captions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Target Factbox - Control TotalCaptions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1551736753 - Control 1206108245 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Missing Captions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Target Factbox - Control TotalMissingCaptions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1551736753 - Control 4222306506 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Missing Translations</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Trans Target Factbox - Control TotalMissingTranslations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 416827747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Activities</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Activities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 416827747 - Method 716454850 - NamedType 3000237538" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1..%2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Activities - Method OnOpenPage - NamedType DateFilterLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 416827747 - Control 3322269318 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statuses</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Activities - Control Statuses - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 416827747 - Control 2452131096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finished Projects - sent to customer and done for now</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Activities - Control Finished Projects - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 416827747 - Control 4195637998 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Projects - not sent to customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Activities - Control Open Projects - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 416827747 - Control 213221493 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Released Projects - sent to customer, but not finished</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Activities - Control Released Projects - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 416827747 - Control 3971433691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Totals</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Activities - Control Totals - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3156145571 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Notes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1413656711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Role Center</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Role Center - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1413656711 - Action 1514883969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Role Center - Action Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1373268895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1373268895 - Method 4085668921 - NamedType 4165234317" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://ba-consult.dk/downloads/Translate.jpg</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Setup - Method DownloadLogo - NamedType Url</note>
+        </trans-unit>
+        <trans-unit id="Page 1373268895 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Setup - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1373268895 - Control 3205715915 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Languange to be defaulted on every project</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Setup - Control Default Source Language code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1373268895 - Control 1532816877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numbering</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Setup - Control Numbering - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1373268895 - Control 3602357627 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series to be used with Projects</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Setup - Control Project Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1373268895 - Control 729173796 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use the free Google API for translation. The limitation is that it is only possible to access the API a limited number of times each hour.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Setup - Control Use Free Google Translate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1521157903 - Action 3013539561 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show All Captions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Source List - Action Show All Captions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1521157903 - Action 4197928789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Empty Captions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Source List - Action Show Empty Captions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Target List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Method 2718453096 - NamedType 149879980" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copying #1###### of #2######</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Method CopyAll - NamedType DialogTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Method 2399813187 - NamedType 1997793078" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 Duplicate captions found</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Method FindDuplicates - NamedType FinishedTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Method 3089930585 - NamedType 149879980" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Converting #1###### of #2######</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Method TranslateAll - NamedType DialogTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Method 1507434934 - NamedType 1997793078" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 source captions updated. %2 obsolete targets deleted.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Method UpdateFromSource - NamedType FinishedTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Control 1125457875 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the translated text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Control Target - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Control 2423039072 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set the Translate field to no if you don't want it to be translated</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Control Translate2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 3697546316 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear All translations within filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Clear All translations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 3697546316 - Method 1377591017 - NamedType 3492639454" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove all translations?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Clear All translations - Method OnAction - NamedType WarningTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 4254856415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Copy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 470634056 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy All</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Copy All - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 470634056 - Method 1377591017 - NamedType 1550888149" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy all,Copy only missing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Copy All - Method OnAction - NamedType MenuSelectionTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 3340327436 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deselect All</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Deselect All - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 3340327436 - Method 1377591017 - NamedType 3492639454" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove mark from all lines and disable translation?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Deselect All - Method OnAction - NamedType WarningTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 1201513059 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Translation File</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Export Translation File - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 1201513059 - Method 1377591017 - NamedType 3492639454" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export the Translation file?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Export Translation File - Method OnAction - NamedType WarningTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 2734177123 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find Duplicates</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Find Duplicates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 2734177123 - Method 1377591017 - NamedType 2782812347" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find Duplicates?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Find Duplicates - Method OnAction - NamedType FindDuplicatesTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 1924145123 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select All</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Select All - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 1924145123 - Method 1377591017 - NamedType 3492639454" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mark all untranslated lines to be translated?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Select All - Method OnAction - NamedType WarningTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 2792232207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select Empty Translations</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Select Empty Translations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 2103044874 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Translate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 2595900721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translate All</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Translate All - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 2595900721 - Method 1377591017 - NamedType 1550888149" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Convert all,Convert only missing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Translate All - Method OnAction - NamedType MenuSelectionTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 2294305842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Translation Terms - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 2333929286 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update From Source</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Update From Source - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3829040699 - Action 2333929286 - Method 1377591017 - NamedType 2782812347" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update from Source?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation Target List - Action Update From Source - Method OnAction - NamedType FindDuplicatesTxt</note>
+        </trans-unit>
+        <trans-unit id="Page 2024935577 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translation Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation terms - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2024935577 - Control 3703563327 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If checked, the term is used pre-translation. Leave translation empty to use the term as is.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation terms - Control Apply Pre-Translation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2024935577 - Control 605026954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the term to hardcode for translation. E.g. 'Journal' must be translated to 'Worksheet'. Every instance of the term will be replaced with the translation.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation terms - Control Term - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2024935577 - Control 1358710565 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter the translation to be inserted for the term. E.g. 'Journal' must be translated to 'Worksheet'. Every instance of the term will be replaced with the translation.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation terms - Control Translation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2024935577 - Action 3466704859 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add to General Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation terms - Action Add to General Terms - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2024935577 - Action 148989252 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy From General Terms</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX Translation terms - Action Copy From General Terms - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2114638088 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User Access</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX User Access - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2114638088 - Method 716454850 - NamedType 1254422327" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No Access</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BCX User Access - Method OnOpenPage - NamedType NoAccessTxt</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 228357945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Translation Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Export Translation Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 228357945 - NamedType 1118720440" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Name is Missing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Export Translation Target - NamedType MissingProjNameTxt</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 91863184 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Base Translation Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Import Base Trans. Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 91863184 - NamedType 1118720440" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Name is Missing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Import Base Trans. Target - NamedType MissingProjNameTxt</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 91863184 - XmlPortNode 1251761246 - Method 1633929414 - NamedType 1474867470" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must be %2 in file - The file %1 is %3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Import Base Trans. Target - XmlPortNode source-language - Method OnAfterAssignVariable - NamedType WrongSourceLangTxt</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3600901934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Translation Source</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Import Translation Source - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3600901934 - NamedType 1118720440" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Name is Missing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Import Translation Source - NamedType MissingProjNameTxt</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3600901934 - XmlPortNode 1251761246 - Method 1633929414 - NamedType 1474867470" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must be %2 in file - The file %1 is %3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Import Translation Source - XmlPortNode source-language - Method OnAfterAssignVariable - NamedType WrongSourceLangTxt</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3758751106 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Translation Target</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Import Translation Target - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3758751106 - NamedType 1118720440" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Project Name is Missing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Import Translation Target - NamedType MissingProjNameTxt</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3758751106 - XmlPortNode 1251761246 - Method 1633929414 - NamedType 1474867470" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 must be %2 in file - The file %1 is %3</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort BCX Import Translation Target - XmlPortNode source-language - Method OnAfterAssignVariable - NamedType WrongSourceLangTxt</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4112182232 - Action 2114638088 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2183420390">
+          <source>User Access</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension BCX User Card - Action BCX User Access - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1484910054 - Field 783307843 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4093990710">
+          <source>ISO code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BCX Language Ext - Field BCX ISO code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1484910054 - Field 783307843 - Method 2126772001 - NamedType 848472796" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 1484910054">
+          <source>ISO code must consist of either a two letter code like 'bg' for Bulgarian or a five letter code 'en-US' for English in USA</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BCX Language Ext - Field BCX ISO code - Method OnValidate - NamedType ErrorTxt</note>
+        </trans-unit>
+        <trans-unit id="Profile 2692871326 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translations</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile BCX Translation - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
