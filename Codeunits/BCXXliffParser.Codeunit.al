@@ -39,6 +39,7 @@ codeunit 78605 "BCX Xliff Parser"
         TransUnitId: Text[250];
         SourceText: Text;
         TargetText: Text;
+        TargetStatus: Text[50];
         SizeUnit: Text[50];
         TranslateAttr: Text[50];
         AlObjectTarget: Text[250];
@@ -55,7 +56,7 @@ codeunit 78605 "BCX Xliff Parser"
         i: Integer;
         j: Integer;
 
-        
+
         RecSource: Record "BCX Translation Source";
         RecTarget: Record "BCX Translation Target";
         RecExistingTarget: Record "BCX Translation Target";
@@ -138,6 +139,7 @@ codeunit 78605 "BCX Xliff Parser"
             if (TargetNodes.Count() > 0) then begin
                 TargetNodes.Get(1, tn);
                 TargetText := tn.AsXmlElement().InnerText();
+                TargetStatus := CopyStr(XmlHelper.GetAttr(tn.AsXmlElement(), 'state'), 1, MaxStrLen(TargetStatus));
             end;
 
             // If both source and target empty -> skip
@@ -147,7 +149,7 @@ codeunit 78605 "BCX Xliff Parser"
             // Prepare notes collection for this trans-unit
             NoteList := TransEl.GetChildElements('note', ns);
             if NoteList.Count() = 0 then
-                NoteList := TransEl.GetChildElements('note'); 
+                NoteList := TransEl.GetChildElements('note');
 
             // Insert into appropriate table depending on Mode
             if Mode = 'Source' then begin
@@ -234,7 +236,13 @@ codeunit 78605 "BCX Xliff Parser"
                         RecTarget.Target := RecExistingTarget.Target
                     else
                         RecTarget.Translate := true;
+                end else begin
+                    if (TargetStatus = 'needs-adaptation') or (TargetStatus = 'needs-translation') then
+                        RecTarget.Translate := true
+                    else
+                        RecTarget.Translate := false;
                 end;
+
                 RecTarget."size-unit" := CopyStr(SizeUnit, 1, MaxStrLen(RecTarget."size-unit"));
                 RecTarget.TranslateAttr := CopyStr(TranslateAttr, 1, MaxStrLen(RecTarget.TranslateAttr));
                 RecTarget."al-object-target" := CopyStr(AlObjectTarget, 1, MaxStrLen(RecTarget."al-object-target"));
