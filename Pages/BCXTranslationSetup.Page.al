@@ -24,25 +24,43 @@ page 78607 "BCX Translation Setup"
             }
             group("Translate Tools")
             {
-                field("Use Free Google Translate"; Rec."Use Free Google Translate")
+                group("Google")
                 {
-                    ApplicationArea = All;
-                    ToolTip = 'Use the free Google API for translation. The limitation is that it is only possible to access the API a limited number of times each hour.';
+                    ShowCaption = false;
+
+                    field("Use Free Google Translate"; Rec."Use Free Google Translate")
+                    {
+                        ApplicationArea = All;
+                        ToolTip = 'Use the free Google API for translation. The limitation is that it is only possible to access the API a limited number of times each hour.';
+                    }
                 }
-
-
-                field("Use ChatGPT"; Rec."Use OpenAI") { }
-                field("ChatGPT API Key"; Rec."OpenAI API Key")
+                group("ChatGPT")
                 {
-                    ApplicationArea = All;
-                    ExtendedDatatype = Masked;
+                    ShowCaption = false;
 
+                    field("Use ChatGPT"; Rec."Use OpenAI") { }
+                    field("ChatGPT API Key"; Rec."OpenAI API Key")
+                    {
+                        ApplicationArea = All;
+                        ExtendedDatatype = Masked;
+
+                    }
+                    field("ChatGPT Model"; Rec."OpenAI Model")
+                    {
+                        ApplicationArea = All;
+                    }
                 }
-                field("ChatGPT Model"; Rec."OpenAI Model")
+                group("DeepL")
                 {
-                    ApplicationArea = All;
-                }
+                    ShowCaption = false;
+                    field("Use DeepL"; Rec."Use DeepL") { }
+                    field("DeepL API Key"; Rec."DeepL API Key")
+                    {
+                        ApplicationArea = All;
+                        ExtendedDatatype = Masked;
 
+                    }
+                }
 
             }
 

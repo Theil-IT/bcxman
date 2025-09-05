@@ -93,4 +93,25 @@ codeunit 78606 "BCX XML Helpers"
                 Txt := CopyStr(Txt, 2, StrLen(Txt) - 1);
         end;
     end;
+
+    procedure TrimText(Input: Text): Text
+    var
+        Char: Char;
+    begin
+        while (StrLen(Input) > 0) do begin
+            Evaluate(Char, CopyStr(Input, 1, 1));
+            if not (Char in [' ', 9, 10, 13]) then
+                break;
+            Input := CopyStr(Input, 2);
+        end;
+
+        while (StrLen(Input) > 0) do begin
+            Evaluate(Char, CopyStr(Input, StrLen(Input), 1));
+            if not (Char in [' ', 9, 10, 13]) then
+                break;
+            Input := CopyStr(Input, 1, StrLen(Input) - 1);
+        end;
+
+        exit(Input);
+    end;
 }

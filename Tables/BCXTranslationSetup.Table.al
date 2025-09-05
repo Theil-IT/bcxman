@@ -48,6 +48,19 @@ table 78606 "BCX Translation Setup"
 
             DataClassification = SystemMetadata;
         }
+
+        field(90; "Use DeepL"; Boolean)
+        {
+            Caption = 'Use DeepL';
+            DataClassification = SystemMetadata;
+        }
+
+        field(100; "DeepL API Key"; Text[512])
+        {
+            Caption = 'DeepL API Key';
+            DataClassification = SystemMetadata;
+        }
+
     }
 
     keys

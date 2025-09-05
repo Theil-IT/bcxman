@@ -11,7 +11,6 @@ codeunit 78602 "BCX GPT Translate Rest"
         Request.SetRequestUri(Url);
         Request.Method := HttpMethod;
 
-        // ✅ Add headers directly to the request (NOT content)
         Request.GetHeaders(RequestHeaders);
         if (HeaderName <> '') and not RequestHeaders.Contains(HeaderName) then
             RequestHeaders.Add(HeaderName, HeaderValue);
@@ -70,9 +69,10 @@ codeunit 78602 "BCX GPT Translate Rest"
             outTransText := inText;
             exit;
         end;
-        Setup := GetTranslationSetup();
+        if not Setup.Get() then
+            Error('Translation setup is missing.');
         if not Setup."Use OpenAI" then
-            Error('ChatGPT translation is disabled in setup.');
+            Error('OpenAI translation is disabled in setup.');
         GenTransTerms.SetFilter("Project Code", '%1', ProjectCode);
         if (GenTransTerms.FindSet()) then
             repeat
@@ -149,15 +149,6 @@ codeunit 78602 "BCX GPT Translate Rest"
 
 
 
-    local procedure GetTranslationSetup(): Record "BCX Translation Setup"
-    var
-        Setup: Record "BCX Translation Setup";
-    begin
-        if not Setup.Get() then
-            Error('Translation setup is missing.');
-        exit(Setup);
-    end;
-
     local procedure ParseTranslatedText(JsonText: Text): Text
     var
         Tok: JsonToken;
@@ -197,26 +188,7 @@ codeunit 78602 "BCX GPT Translate Rest"
         exit(Result);
     end;
 
-    local procedure TrimText(Input: Text): Text
-    var
-        Char: Char;
-    begin
-        while (StrLen(Input) > 0) do begin
-            Evaluate(Char, CopyStr(Input, 1, 1));
-            if not (Char in [' ', 9, 10, 13]) then
-                break;
-            Input := CopyStr(Input, 2);
-        end;
 
-        while (StrLen(Input) > 0) do begin
-            Evaluate(Char, CopyStr(Input, StrLen(Input), 1));
-            if not (Char in [' ', 9, 10, 13]) then
-                break;
-            Input := CopyStr(Input, 1, StrLen(Input) - 1);
-        end;
-
-        exit(Input);
-    end;
 
 
 

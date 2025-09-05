@@ -8,12 +8,15 @@ codeunit 78603 "BCX Translate Dispatcher"
     var
         GPT: Codeunit "BCX GPT Translate Rest";
         Google: Codeunit "BCX Google Translate Rest";
+        DeepL: Codeunit "BCX DeepL Translate";
     begin
         EnsureSetupLoaded();
 
         if CachedSetup."Use OpenAI" then
             exit(GPT.Translate(ProjectCode, SourceLang, TargetLang, TextToTranslate))
-        else
+        else if CachedSetup."Use DeepL" then
+            exit(DeepL.Translate(ProjectCode, SourceLang, TargetLang, TextToTranslate))
+        else if CachedSetup."Use Free Google Translate" then
             exit(Google.Translate(ProjectCode, SourceLang, TargetLang, TextToTranslate));
     end;
 
@@ -34,4 +37,3 @@ codeunit 78603 "BCX Translate Dispatcher"
         SetupLoaded := true;
     end;
 }
- 

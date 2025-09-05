@@ -5,7 +5,7 @@ page 78603 "BCX Translation Target List"
     PageType = List;
     SourceTable = "BCX Translation Target";
     PopulateAllFields = true;
-    DataCaptionFields = "Project Code","Target Language ISO code";
+    DataCaptionFields = "Project Code", "Target Language ISO code";
 
     layout
     {
@@ -336,7 +336,7 @@ page 78603 "BCX Translation Target List"
         TargetLanguage: Record "BCX Target Language";
     begin
         TransSetup.get();
-        ShowTranslate := TransSetup."Use Free Google Translate" or TransSetup."Use OpenAI";
+        ShowTranslate := TransSetup."Use Free Google Translate" or TransSetup."Use OpenAI" or TransSetup."Use DeepL";
         ShowTargetLanguageCode := true;
         TargetLanguageFilter := Rec.GetFilter("Target Language");
         TargetLanguageIsoFilter := Rec.GetFilter("Target Language ISO code");
