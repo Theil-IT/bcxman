@@ -458,9 +458,11 @@ page 78603 "BCX Translation Target List"
                 TransTarget.Target :=
                   ReplaceTermInTranslation(TransTarget."Target Language ISO code", TransTarget.Target);
                 TransTarget.Translate := false;
+                TransTarget.Modify();
                 // Escape source for filter
-                EscapedSource := StrSubstNo('''%1''', TransTarget.Source.Replace('''', ''''''));
-                TransTarget2.SetFilter(Source, EscapedSource);
+                TransTarget2.Reset();
+                TransTarget2.SetRange("Project Code", Project."Project Code"); // keep within project
+                TransTarget2.SetFilter(Source, '%1', TransTarget.Source);
                 TransTarget2.SetFilter("Target Language ISO code", TransTarget."Target Language ISO code");
                 if inOnlyEmpty then
                     TransTarget2.SetRange(Target, '');

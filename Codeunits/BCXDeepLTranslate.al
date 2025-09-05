@@ -49,6 +49,7 @@ codeunit 78607 "BCX DeepL Translate"
         Texts.Add(inText);
         Payload.Add('text', Texts);
         Payload.Add('target_lang', TmpTgt);
+        Payload.Add('context', 'You are a professional translator specializing in Microsoft Business Central ERP.');
         if TmpSrc <> '' then
             Payload.Add('source_lang', TmpSrc);
 
