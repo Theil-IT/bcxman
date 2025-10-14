@@ -26,6 +26,10 @@ Web site http://b-a.dk/
 Blog: https://dynamicsuser.net/nav/b/peik
 
 
+## 2025-09-05 
+- DeepL translation
+- Misc. bugfixes
+
 ## 2025-08-29 : Update to version 16,  JTH
 - Update to BC26
 - Add support for "Equivalent language" 
