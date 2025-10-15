@@ -84,4 +84,4 @@ page 78606 "BCX Translation terms"
         }
     }
 }
-#pragma implicitwith restore
+#pragma implicitwith restore 

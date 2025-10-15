@@ -22,4 +22,4 @@ page 78610 "BCX AL Logo FactBox"
         }
     }
 }
-#pragma implicitwith restore
+#pragma implicitwith restore 

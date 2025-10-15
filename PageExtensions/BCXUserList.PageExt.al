@@ -1,4 +1,4 @@
-pageextension 78600 "BCX User Card" extends Users
+pageextension 78600 "BCX User List" extends Users
 {
     actions
     {
@@ -7,6 +7,7 @@ pageextension 78600 "BCX User Card" extends Users
             action("BCX User Access")
             {
                 Caption = 'User Access';
+                ToolTip = 'Set access for the BCX Translation Management app.';
                 ApplicationArea = All;
                 Image = ServiceAccessories;
                 Promoted = true;

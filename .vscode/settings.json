@@ -1,3 +1,8 @@
 {
-    "al.defaultLaunchConfigurationName": "Local Sandbox (bc26dev)"
+    "al.defaultLaunchConfigurationName": "Local Sandbox (bc26dev)",
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${CodeCop}",
+        "${analyzerFolder}BusinessCentral.LinterCop.dll"
+    ]
 }

@@ -38,15 +38,22 @@ codeunit 78602 "BCX GPT Translate Rest"
 
 
 
-    local procedure UnprotectGlossaryTerms(var Text: Text): Text
+    local procedure UnprotectGlossaryTerms(var Text: Text[2048]): Text[2048]
     begin
+#pragma warning disable AA0139
         Text := Text.Replace('__KEEP__', '');
         Text := Text.Replace('__/KEEP__', '');
+#pragma warning restore AA0139
         exit(Text);
     end;
 
-    procedure Translate(ProjectCode: Text[20]; inSourceLang: Text[10]; inTargetLang: Text[10]; inText: Text[2048]) outTransText: Text[2048]
+    // Main translation function
+    procedure Translate(ProjectCode: Text[20]; inSourceLang: Text[10]; inTargetLang: Text[10]; inText: Text[4000]) outTransText: Text[2048]
     var
+        Setup: Record "BCX Translation Setup";
+        TransTerms: Record "BCX Translation Term";
+        GenTransTerms: Record "BCX Gen. Translation Term";
+        TypeHelper: Codeunit "Type Helper";
         HttpClient: HttpClient;
         Request: HttpRequestMessage;
         Response: HttpResponseMessage;
@@ -60,29 +67,31 @@ codeunit 78602 "BCX GPT Translate Rest"
         SystemPrompt: Text;
         Glossary: List of [Text];
         Term: Text;
-        Setup: Record "BCX Translation Setup";
-        TransTerms: Record "BCX Translation Term";
-        GenTransTerms: Record "BCX Gen. Translation Term";
-        TypeHelper: Codeunit "Type Helper";
     begin
         if (inSourceLang = inTargetLang) then begin
-            outTransText := inText;
+            outTransText := CopyStr(inText, 1, 2048);
             exit;
         end;
         if not Setup.Get() then
             Error('Translation setup is missing.');
         if not Setup."Use OpenAI" then
             Error('OpenAI translation is disabled in setup.');
-        GenTransTerms.SetFilter("Project Code", '%1', ProjectCode);
+        // Add General Translation Terms marked as pre-translation to glossary
         if (GenTransTerms.FindSet()) then
             repeat
                 if not GenTransTerms."Apply Pre-Translation" then
                     continue; // Skip terms that are not marked for pre-translation
-                //if (GenTransTerms."Target Language" <> '') and (GenTransTerms."Target Language" <> inTargetLang) then
-                //    continue; // Skip terms not matching target language
                 GlossaryTerms += GenTransTerms.Term + ', ';
                 Glossary.Add(GenTransTerms.Term);
             until GenTransTerms.Next() = 0;
+        TransTerms.SetFilter("Project Code", '%1', ProjectCode);
+        if (TransTerms.FindSet()) then
+            repeat
+                if not TransTerms."Apply Pre-Translation" then
+                    continue; // Skip terms that are not marked for pre-translation
+                GlossaryTerms += TransTerms.Term + ', ';
+                Glossary.Add(TransTerms.Term);
+            until TransTerms.Next() = 0;
         SystemPrompt :=
           'You are a professional translator specializing in Microsoft Business Central ERP. ' +
           'Translate from English (US) to the language specified in the first line (ISO format, e.g., da-DK). ' +
@@ -101,7 +110,9 @@ codeunit 78602 "BCX GPT Translate Rest"
         UserMsg.Add('role', 'user');
 
         foreach Term in Glossary do
+#pragma warning disable AA0139
             InText := InText.Replace(Term, '__KEEP__' + Term + '__/KEEP__');
+#pragma warning restore AA0139
 
         UserMsg.Add('content', inTargetLang + TypeHelper.NewLine() + inText);
         Messages.Add(UserMsg);
@@ -131,23 +142,9 @@ codeunit 78602 "BCX GPT Translate Rest"
             Error('OpenAI returned status %1: %2', Response.HttpStatusCode, Response.ReasonPhrase);
 
         Response.Content.ReadAs(ResponseText);
-        outTransText := ParseTranslatedText(ResponseText); // Assuming this works as expected
+        outTransText := CopyStr(ParseTranslatedText(ResponseText), 1, 2048); // Prevent overflow
         outTransText := UnprotectGlossaryTerms(outTransText);
     end;
-
-
-
-
-    local procedure FormatJsonString(Input: Text): Text
-    begin
-        Input := Input.Replace('\', '\\');               // Escape backslash
-        Input := Input.Replace('"', '\"');               // Escape double quotes
-        Input := Input.Replace(Format(10), '\n');        // Newlines as \n
-        exit('"' + Input + '"');
-    end;
-
-
-
 
     local procedure ParseTranslatedText(JsonText: Text): Text
     var

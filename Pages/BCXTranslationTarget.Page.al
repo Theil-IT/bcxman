@@ -467,8 +467,8 @@ page 78603 "BCX Translation Target List"
                 if inOnlyEmpty then
                     TransTarget2.SetRange(Target, '');
 
-                TransTarget2.ModifyAll(Target, TransTarget.Target);
                 TransTarget2.ModifyAll(Translate, false);
+                TransTarget2.ModifyAll(Target, TransTarget.Target);
 
                 Commit();
                 SelectLatestVersion();

@@ -24,16 +24,22 @@ page 78609 "BCX About AL Translation Tool"
                     ShowCaption = false;
                     field("Version"; AppVersion)
                     {
+                        Caption = 'Version';
+                        ToolTip = 'Version of the AL Translation Tool app.';
                         ApplicationArea = All;
                         Editable = false;
                     }
                     field(AppName; AppName)
                     {
+                        Caption = 'Application Name';
+                            ToolTip = 'Name of the AL Translation Tool app.';
                         ApplicationArea = All;
                         Editable = false;
                     }
                     field(AppPublisher; AppPublisher)
                     {
+                        Caption = 'Publisher';
+                        ToolTip = 'Publisher of the AL Translation Tool app.';
                         ApplicationArea = All;
                         Editable = false;
                     }

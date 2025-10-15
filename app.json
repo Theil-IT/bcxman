@@ -13,6 +13,7 @@
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "26.0.0.0",
+  "runtime": "15.2",
   "idRanges": [
     {
       "from": 78600,

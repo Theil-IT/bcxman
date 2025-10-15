@@ -2,24 +2,33 @@ codeunit 78605 "BCX Xliff Parser"
 {
 
     // Public entry points for the three import types the XMLPorts used to handle
-    procedure ImportSourceFromStream(ProjectCode: Code[20]; FileName: Text; var InS: InStream)
+    procedure ImportSourceFromStream(ProjectCode: Code[10]; FileName: Text; var InS: InStream)
     begin
         ParseAndInsert(ProjectCode, FileName, InS, 'Source', '', '');
     end;
 
-    procedure ImportBaseTargetFromStream(ProjectCode: Code[20]; SourceLangISO: Text[10]; TargetLangISO: Text[10]; FileName: Text; var InS: InStream)
+    procedure ImportBaseTargetFromStream(ProjectCode: Code[10]; SourceLangISO: Text[10]; TargetLangISO: Text[10]; FileName: Text; var InS: InStream)
     begin
         ParseAndInsert(ProjectCode, FileName, InS, 'BaseTarget', SourceLangISO, TargetLangISO);
     end;
 
-    procedure ImportTargetFromStream(ProjectCode: Code[20]; SourceLangISO: Text[10]; TargetLangISO: Text[10]; FileName: Text; var InS: InStream)
+    procedure ImportTargetFromStream(ProjectCode: Code[10]; SourceLangISO: Text[10]; TargetLangISO: Text[10]; FileName: Text; var InS: InStream)
     begin
         ParseAndInsert(ProjectCode, FileName, InS, 'Target', SourceLangISO, TargetLangISO);
     end;
 
-    local procedure ParseAndInsert(ProjectCode: Code[20]; FileName: Text; var InS: InStream; Mode: Text; SourceLangISO: Text[10]; TargetLangISO: Text[10])
+    local procedure ParseAndInsert(ProjectCode: Code[10]; FileName: Text; var InS: InStream; Mode: Text; SourceLangISO: Text[10]; TargetLangISO: Text[10])
     var
+        RecSource: Record "BCX Translation Source";
+        RecTarget: Record "BCX Translation Target";
+        RecExistingTarget: Record "BCX Translation Target";
+        RecBaseTarget: Record "BCX Base Translation Target";
+        RecNote: Record "BCX Translation Notes";
+        RecBaseNote: Record "BCX Base Translation Notes";
+        RecProject: Record "BCX Translation Project";
+        RecTargetLanguage: Record "Language";
         XmlHelper: Codeunit "BCX XML Helpers";
+
         XmlDoc: XmlDocument;
         RootEl: XmlElement;
         ns: Text;
@@ -49,7 +58,7 @@ codeunit 78605 "BCX Xliff Parser"
         NoteNode: XmlNode;
         NoteEl: XmlElement;
         NoteFrom: Text[100];
-        NoteAnnotates: Text[100];
+        NoteAnnotates: Text[50];
         NotePriority: Text[10];
         NoteText: Text;
 
@@ -57,15 +66,6 @@ codeunit 78605 "BCX Xliff Parser"
         j: Integer;
 
 
-        RecSource: Record "BCX Translation Source";
-        RecTarget: Record "BCX Translation Target";
-        RecExistingTarget: Record "BCX Translation Target";
-        RecBaseTarget: Record "BCX Base Translation Target";
-        RecNote: Record "BCX Translation Notes";
-        RecBaseNote: Record "BCX Base Translation Notes";
-        RecProject: Record "BCX Translation Project";
-        RecTargetLanguage: Record "Language";
-        RecSourceLanguage: Record "Language";
     begin
         // Parse XML
         XmlHelper.ReadXmlFromInStream(InS, XmlDoc);
@@ -82,23 +82,23 @@ codeunit 78605 "BCX Xliff Parser"
             FileElements.Get(1, FileNode);
             FileEl := FileNode.AsXmlElement();
 
+#pragma warning disable AA0139
             // If Mode didn't pass source/target ISO, take from file attributes
-            if SourceLangISO = '' then begin
+            if SourceLangISO = '' then
                 SourceLangISO := XmlHelper.GetAttr(FileEl, 'source-language');
-            end;
-            if TargetLangISO = '' then begin
-                TargetLangISO := XmlHelper.GetAttr(FileEl, 'target-language');
-            end;
 
-            RecSourceLanguage.SetRange("BCX ISO code", SourceLangISO);
-            RecSourceLanguage.FindFirst();
+            if TargetLangISO = '' then 
+                TargetLangISO := XmlHelper.GetAttr(FileEl, 'target-language');
+#pragma warning restore AA0139
+        
+
             RecTargetLanguage.SetRange("BCX ISO code", TargetLangISO);
             RecTargetLanguage.FindFirst();
 
             // If the <file original="..."> contains an original project name, update project (optional)
             if (mode = 'Source') then begin
                 RecProject.Get(ProjectCode);
-                RecProject."File Name" := FileName;
+                RecProject."File Name" := CopyStr(FileName, 1, MaxStrLen(RecProject."File Name"));
                 if XmlHelper.GetAttr(FileEl, 'original') <> '' then
                     RecProject.Validate("Project Name", CopyStr(XmlHelper.GetAttr(FileEl, 'original'), 1, MaxStrLen(RecProject."Project Name")));
 
@@ -152,6 +152,7 @@ codeunit 78605 "BCX Xliff Parser"
                 NoteList := TransEl.GetChildElements('note');
 
             // Insert into appropriate table depending on Mode
+#pragma warning disable AA0022
             if Mode = 'Source' then begin
                 RecSource.Init();
                 RecSource."Project Code" := ProjectCode;
@@ -174,7 +175,7 @@ codeunit 78605 "BCX Xliff Parser"
                     RecNote.From := NoteFrom;
                     RecNote.Annotates := NoteAnnotates;
                     RecNote.Priority := NotePriority;
-                    RecNote.Note := NoteText;
+                    RecNote.Note := CopyStr(NoteText, 1, MaxStrLen(RecNote.Note));
                     if ((RecNote.Note <> '') and ((RecSource."Field Name" = '') or (RecNote.From = 'Xliff Generator'))) then
                         RecSource."Field Name" := RecNote."Note";
                     if not RecNote.Insert() then
@@ -182,7 +183,8 @@ codeunit 78605 "BCX Xliff Parser"
                 end;
                 if not RecSource.Insert() then
                     RecSource.Modify();
-            end else if Mode = 'BaseTarget' then begin
+            end else 
+            if Mode = 'BaseTarget' then begin
                 RecBaseTarget.Init();
                 RecBaseTarget."Project Code" := ProjectCode;
                 RecBaseTarget."Trans-Unit Id" := CopyStr(TransUnitId, 1, MaxStrLen(RecBaseTarget."Trans-Unit Id"));
@@ -209,7 +211,7 @@ codeunit 78605 "BCX Xliff Parser"
                     RecBaseNote.From := NoteFrom;
                     RecBaseNote.Annotates := NoteAnnotates;
                     RecBaseNote.Priority := NotePriority;
-                    RecBaseNote.Note := NoteText;
+                    RecBaseNote.Note := CopyStr(NoteText, 1, MaxStrLen(RecBaseNote.Note));
                     if ((RecBaseNote.Note <> '') and ((RecBaseTarget."Field Name" = '') or (RecBaseNote.From = 'Xliff Generator'))) then
                         RecBaseTarget."Field Name" := RecBaseNote."Note";
                     if not RecBaseNote.Insert() then
@@ -236,12 +238,12 @@ codeunit 78605 "BCX Xliff Parser"
                         RecTarget.Target := RecExistingTarget.Target
                     else
                         RecTarget.Translate := true;
-                end else begin
+                end else 
                     if (TargetStatus = 'needs-adaptation') or (TargetStatus = 'needs-translation') then
                         RecTarget.Translate := true
                     else
                         RecTarget.Translate := false;
-                end;
+            
 
                 RecTarget."size-unit" := CopyStr(SizeUnit, 1, MaxStrLen(RecTarget."size-unit"));
                 RecTarget.TranslateAttr := CopyStr(TranslateAttr, 1, MaxStrLen(RecTarget.TranslateAttr));
@@ -264,7 +266,7 @@ codeunit 78605 "BCX Xliff Parser"
                     RecNote.From := NoteFrom;
                     RecNote.Annotates := NoteAnnotates;
                     RecNote.Priority := NotePriority;
-                    RecNote.Note := NoteText;
+                    RecNote.Note := CopyStr(NoteText, 1, MaxStrLen(RecNote.Note));
                     if ((RecNote.Note <> '') and ((RecTarget."Field Name" = '') or (RecNote.From = 'Xliff Generator'))) then
                         RecTarget."Field Name" := RecNote."Note";
                     if not RecNote.Insert() then
@@ -275,6 +277,7 @@ codeunit 78605 "BCX Xliff Parser"
                     RecTarget.Modify();
 
             end;
+#pragma warning restore AA0022
         end;
     end;
 

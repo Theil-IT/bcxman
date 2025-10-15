@@ -2,6 +2,7 @@ codeunit 78607 "BCX DeepL Translate"
 {
     procedure Translate(ProjectCode: Text[20]; inSourceLang: Text[10]; inTargetLang: Text[10]; inText: Text[2048]) outTransText: Text[2048]
     var
+        Setup: Record "BCX Translation Setup";
         HttpClient: HttpClient;
         Request: HttpRequestMessage;
         Response: HttpResponseMessage;
@@ -9,8 +10,6 @@ codeunit 78607 "BCX DeepL Translate"
         Content: HttpContent;
         Payload: JsonObject;
         Texts: JsonArray;
-        Setup: Record "BCX Translation Setup";
-        TypeHelper: Codeunit "Type Helper";
         TmpSrc, TmpTgt : Text;
         ResponseText: Text;
     begin
@@ -80,7 +79,7 @@ codeunit 78607 "BCX DeepL Translate"
         Response.Content.ReadAs(ResponseText);
 
         // Parse DeepL response and return first translated text
-        outTransText := ParseDeepLResponse(ResponseText);
+        outTransText := CopyStr(ParseDeepLResponse(ResponseText), 1, 2048);
 
         // Unprotect glossary terms - add later
         // outTransText := UnprotectGlossaryTerms(outTransText);
@@ -89,6 +88,7 @@ codeunit 78607 "BCX DeepL Translate"
 
     local procedure ParseDeepLResponse(JsonText: Text): Text
     var
+        Helper: Codeunit "BCX XML Helpers";
         Tok: JsonToken;
         RootObj: JsonObject;
         TranslationsTok: JsonToken;
@@ -97,7 +97,6 @@ codeunit 78607 "BCX DeepL Translate"
         FirstTranslationObj: JsonObject;
         TextTok: JsonToken;
         ResultTxt: Text;
-        Helper: Codeunit "BCX XML Helpers";
     begin
         if not Tok.ReadFrom(JsonText) then
             Error('Failed to parse DeepL response JSON.');

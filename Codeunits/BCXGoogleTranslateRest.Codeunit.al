@@ -18,8 +18,6 @@ codeunit 78600 "BCX Google Translate Rest"
     procedure Translate(ProjectCode: Text[20]; inSourceLang: Text[10]; inTargetLang: Text[10]; inText: Text[2048]) outTransText: text[2048]
     var
         EndPoint: Text;
-        TokenName: Text[50];
-        Headers: HttpHeaders;
         PreparedText: Text;
         TranslatedText: Text;
     begin
@@ -38,7 +36,7 @@ codeunit 78600 "BCX Google Translate Rest"
         ResponseMessage.Content.ReadAs(TransText);
 
         TranslatedText := GetLines(TransText);
-        outTransText := RestorePlaceholders(TranslatedText);
+        outTransText := CopyStr(RestorePlaceholders(TranslatedText), 1, 2048);
     end;
 
 
@@ -50,7 +48,6 @@ codeunit 78600 "BCX Google Translate Rest"
         InnerArr: JsonArray;
         InnerTok: JsonToken;
         DeepArr: JsonArray;
-        DeepTok: JsonToken;
         ValueTok: JsonToken;
         Value: Text;
     begin
@@ -79,27 +76,8 @@ codeunit 78600 "BCX Google Translate Rest"
     end;
 
 
-    local procedure GetLinesOld(inTxt: Text) outTxt: Text;
-
-    begin
-        if copystr(inTxt, 1, 1) <> '[' then
-            exit;
-        while copystr(inTxt, 1, 1) = '[' do
-            inTxt := DelChr(inTxt, '<', '[');
-        inTxt := DelChr(inTxt, '<', '"');
-        outTxt := CopyStr(inTxt, 1, strpos(inTxt, '"') - 1);
-        if StrPos(inTxt, '],[') > 0 then begin
-            inTxt := CopyStr(inTxt, StrPos(inTxt, '],[') + 3);
-            inTxt := DelChr(inTxt, '<', '"');
-            outTxt += CopyStr(inTxt, 1, strpos(inTxt, '"') - 1);
-        end;
-    end; 
-
     var
         HttpClient: HttpClient;
         ResponseMessage: HttpResponseMessage;
         TransText: text;
-        CurrencyRate: Record "Currency Exchange Rate" temporary;
-        Currency: Record Currency;
-        InvExchRate: Decimal;
 }

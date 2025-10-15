@@ -3,25 +3,20 @@ codeunit 78604 "BCX Project Importer"
     SingleInstance = false;
 
 
-    local procedure ReadTextPreview(var InS: InStream; MaxChars: Integer): Text
-    var
-        chunk: Text;
-        acc: Text;
-    begin
-        // ReadText consumes the stream; caller must recreate afterward
-        while (not InS.EOS()) and ((MaxChars <= 0) or (StrLen(acc) < MaxChars)) do begin
-            InS.ReadText(chunk);
-            if MaxChars > 0 then
-                acc += CopyStr(chunk, 1, MaxChars - StrLen(acc))
-            else
-                acc += chunk;
-        end;
-        exit(acc); 
-    end;
 
-    procedure ImportFromZip(ProjectCode: Code[20]; SourceLangIso: Text[10]; Overwrite: Boolean)
+    procedure ImportFromZip(ProjectCode: Code[10]; SourceLangIso: Text[10]; Overwrite: Boolean)
     var
-        FileMgt: Codeunit "File Management";
+        TransSource: Record "BCX Translation Source";
+        BaseNotes: Record "BCX Base Translation Notes";
+        TransNotes: Record "BCX Translation Notes";
+        TransTargetLanguage: Record "BCX Target Language";
+        TransTarget: Record "BCX Translation Target";
+        TransBaseTarget: Record "BCX Base Translation Target";
+        TransProject: Record "BCX Translation Project";
+        TransTerm: Record "BCX Translation Term";
+
+        SourceLanguageRec: Record "Language";
+        TargetLanguageRec: Record "Language";
         DataCompression: Codeunit "Data Compression";
         TempBlob: Codeunit "Temp Blob";
         ProjectFile: Text;
@@ -35,22 +30,11 @@ codeunit 78604 "BCX Project Importer"
         TargetLangISO: Text[10];
         OriginalProjectName: Text[100];
         Dialog: Dialog;
-        TransSource: Record "BCX Translation Source";
-        BaseNotes: Record "BCX Base Translation Notes";
-        TransNotes: Record "BCX Translation Notes";
-        TransTargetLanguage: Record "BCX Target Language";
-        TransTarget: Record "BCX Translation Target";
-        TransBaseTarget: Record "BCX Base Translation Target";
-        TransProject: Record "BCX Translation Project";
-        TransTerm: Record "BCX Translation Term";
-
-        SourceLanguageRec: Record "Language";
-        TargetLanguageRec: Record "Language";
         TargetsToProcess: List of [Text];
         SourceName: Text;
         ImportedCnt: Integer;
-        StepTxt: Label 'Importing #1######';
-        DeleteWarningTxt: Label 'This will delete all existing source and translations for project %1';
+        StepTxt: Label 'Importing #1######', Comment = 'Dialog step text. #1###### is replaced with the file name being imported.';
+        DeleteWarningTxt: Label 'This will delete all existing source and translations for project %1', Comment = 'Warning text when overwriting existing project, %1 is replaced with project code.';
     begin
         // Optional cleanup if overwrite
         if Overwrite then begin
@@ -177,13 +161,13 @@ codeunit 78604 "BCX Project Importer"
                 TransTargetLanguage.Insert();
             end;
 
-            // If target-language equals source-language, we treat it as Ba se Target
+            // If target-language equals source-language, we treat it as Ba se Target 
             if (TargetLangISO <> '') and (TargetLangISO = SourceLangIso) then begin
                 ImportBaseTargetFromStream(ProjectCode, SourceLangIso, TargetLangISO, EntryName, EntryInS);
                 ImportTargetFromStream(ProjectCode, SourceLangIso, TargetLangISO, EntryName, EntryInS);      // Also import as normal target to have editable copy
-            end else begin
+            end else 
                 ImportTargetFromStream(ProjectCode, SourceLangIso, TargetLangISO, EntryName, EntryInS);
-            end;
+            
             ImportedCnt += 1;
             Dialog.Update(1, CopyStr(EntryName, 1, 50));
         end;
@@ -259,42 +243,7 @@ codeunit 78604 "BCX Project Importer"
 
     end;
 
-    local procedure NormalizeTempBlobForXml(var Tmp: Codeunit "Temp Blob"; EntryName: Text)
-    var
-        InS: InStream;
-        OutS: OutStream;
-        txt: Text;
-        chunk: Text;
-        idx: Integer;
-        dbgFileName: Text;
-    begin
-        // Read entire blob as text (debug-only decoding). We only look for ASCII "<?xml".
-        Tmp.CreateInStream(InS);
-        txt := '';
-        while not InS.EOS() do begin
-            InS.ReadText(chunk);
-            txt += chunk;
-        end;
-
-        // Find the XML prolog start
-        idx := StrPos(txt, '<?xml');
-        if idx = 0 then begin
-            // Nothing useful: save raw blob for debugging and raise a clear error
-            Tmp.CreateInStream(InS);
-            dbgFileName := 'BCX_Debug_' + EntryName;
-            // Let user save the binary (File.DownloadFromStream shows Save dialog)
-            File.DownloadFromStream(InS, 'Save problematic zip entry (binary) for inspection', '', '', dbgFileName);
-            Error('Could not find "<?xml" in entry %1. Saved the raw entry for inspection as %2.', EntryName, dbgFileName);
-        end;
-
-        // Trim any leading garbage before '<?xml' and rewrite blob
-        txt := CopyStr(txt, idx, StrLen(txt) - idx + 1);
-
-        Tmp.CreateOutStream(OutS);     // reset the TempBlob and write cleaned text back
-        OutS.WriteText(txt);
-    end;
-
-
+    
     local procedure GetAttr(Element: XmlElement; Name: Text): Text
     var
         Attrs: XmlAttributeCollection;
@@ -312,10 +261,10 @@ codeunit 78604 "BCX Project Importer"
     end;
 
 
-    local procedure ImportSourceFromStream(ProjectCode: Code[20]; FileName: Text; var InS: InStream)
+    local procedure ImportSourceFromStream(ProjectCode: Code[10]; FileName: Text; var InS: InStream)
     var
-        XliffParser: Codeunit "BCX Xliff Parser";
         TransProject: Record "BCX Translation Project";
+        XliffParser: Codeunit "BCX Xliff Parser";
     begin
         // Use the new code-based parser instead of the XmlPort
         XliffParser.ImportSourceFromStream(ProjectCode, FileName, InS);
@@ -327,7 +276,7 @@ codeunit 78604 "BCX Project Importer"
         end;
     end;
 
-    local procedure ImportBaseTargetFromStream(ProjectCode: Code[20]; SrcLang: Text[10]; TgtLang: Text[10]; FileName: Text; var InS: InStream)
+    local procedure ImportBaseTargetFromStream(ProjectCode: Code[10]; SrcLang: Text[10]; TgtLang: Text[10]; FileName: Text; var InS: InStream)
     var
         XliffParser: Codeunit "BCX Xliff Parser";
     begin
@@ -335,7 +284,7 @@ codeunit 78604 "BCX Project Importer"
     end;
 
 
-    local procedure ImportTargetFromStream(ProjectCode: Code[20]; SrcLang: Text[10]; TgtLang: Text[10]; FileName: Text; var InS: InStream)
+    local procedure ImportTargetFromStream(ProjectCode: Code[10]; SrcLang: Text[10]; TgtLang: Text[10]; FileName: Text; var InS: InStream)
     var
         XliffParser: Codeunit "BCX Xliff Parser";
     begin

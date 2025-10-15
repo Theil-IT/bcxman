@@ -16,38 +16,52 @@ page 78602 "BCX Target Language List"
 
                 field("Project Name"; Rec."Project Name")
                 {
+                    Caption = 'Project Name';
+                    ToolTip = 'Name of the project.';
                     ApplicationArea = All;
                     QuickEntry = false;
 
                 }
                 field("Source Language"; Rec."Source Language")
                 {
+                    Caption = 'Source Language';
+                    ToolTip = 'Source language of the project.';
                     ApplicationArea = All;
                     QuickEntry = false;
 
                 }
                 field("Source Language ISO code"; Rec."Source Language ISO code")
                 {
+                    Caption = 'Source Language ISO code';
+                    ToolTip = 'ISO code of the source language of the project.';
                     ApplicationArea = All;
                     QuickEntry = false;
                 }
 
                 field("Target Language"; Rec."Target Language")
                 {
+                    Caption = 'Target Language';
+                    ToolTip = 'Target language to translate to.';
                     ApplicationArea = All;
                 }
                 field("Target Language ISO code"; Rec."Target Language ISO code")
                 {
+                    Caption = 'Target Language ISO code';
+                    ToolTip = 'ISO code of the target language.';
                     ApplicationArea = All;
                     QuickEntry = false;
                 }
                 field("Equivalent Language"; Rec."Equivalent Language")
                 {
+                    Caption = 'Equivalent Language';
+                    ToolTip = 'Equivalent language to use instead of the target language.';
                     ApplicationArea = All;
                     QuickEntry = false;
                 }
                 field("Equivalent Language ISO code"; Rec."Equivalent Language ISO code")
                 {
+                    Caption = 'Equivalent Language ISO code';
+                    ToolTip = 'ISO code of the equivalent language.';
                     ApplicationArea = All;
                     QuickEntry = false;
                 }
@@ -69,6 +83,7 @@ page 78602 "BCX Target Language List"
             action("Translation Target")
             {
                 Caption = 'Translation Target';
+                ToolTip = 'Open the translation target.';
                 ApplicationArea = All;
                 Image = Translate;
                 Promoted = true;
@@ -98,6 +113,7 @@ page 78602 "BCX Target Language List"
             action("Translation Terms")
             {
                 Caption = 'Translation Terms';
+                ToolTip = 'Open the translation terms for this project and target language.';
                 ApplicationArea = All;
                 Image = BeginningText;
                 Promoted = true;
@@ -125,6 +141,7 @@ page 78602 "BCX Target Language List"
             action("Project Terms")
             {
                 Caption = 'Project Terms';
+                ToolTip = 'Open language neutral translation terms for this project.';
                 ApplicationArea = All;
                 Image = BeginningText;
                 Promoted = true;
@@ -138,6 +155,7 @@ page 78602 "BCX Target Language List"
             {
                 ApplicationArea = All;
                 Caption = 'Export Translation Files';
+                ToolTip = 'Export translation files for the target language or all languages in the project.';
                 Image = ExportFile;
                 Promoted = true;
                 PromotedOnly = true;
@@ -146,16 +164,15 @@ page 78602 "BCX Target Language List"
 
                 trigger OnAction()
                 var
-                    ExportTranslation: XmlPort "BCX Export Translation Target";
-                    TransProject: Record "BCX Translation Project";
                     TargetLangRec: Record "BCX Target Language"; // adjust if different
+                    TransProject: Record "BCX Translation Project";
                     TempBlob: Codeunit "Temp Blob";
                     DataCompression: Codeunit "Data Compression";
+                    ZipBlob: Codeunit "Temp Blob";
+                    ExportTranslation: XmlPort "BCX Export Translation Target";
                     OutStream: OutStream;
                     InStream: InStream;
                     FileName: Text;
-                    TargetLang: Code[10];
-                    ZipBlob: Codeunit "Temp Blob";
                     ToFile: Text;
                     ChoiceTxt: Label 'Export current language only,Export all languages';
                     Choice: Integer;
@@ -170,10 +187,6 @@ page 78602 "BCX Target Language List"
                         // -------------------
                         // Export current only
                         // -------------------
-                        TargetLang := Rec."Equivalent Language ISO code" <> ''
-                            ? Rec."Equivalent Language ISO code"
-                            : Rec."Target Language ISO code";
-
                         TempBlob.CreateOutStream(OutStream);
                         ExportTranslation.SetProjectCode(
                             Rec."Project Code",
@@ -197,9 +210,6 @@ page 78602 "BCX Target Language List"
                         TargetLangRec.SetRange("Project Code", Rec."Project Code");
                         if TargetLangRec.FindSet() then
                             repeat
-                                TargetLang := TargetLangRec."Equivalent Language ISO code" <> ''
-                                    ? TargetLangRec."Equivalent Language ISO code"
-                                    : TargetLangRec."Target Language ISO code";
 
                                 Clear(ExportTranslation); // new instance per language
                                 Clear(TempBlob);
@@ -236,6 +246,7 @@ page 78602 "BCX Target Language List"
             {
                 ApplicationArea = All;
                 Caption = 'Import Target';
+                ToolTip = 'Import translation target from an XLIFF file for the target language.';
                 Image = ImportLog;
                 Promoted = true;
                 PromotedOnly = true;
@@ -244,13 +255,13 @@ page 78602 "BCX Target Language List"
 
                 trigger OnAction()
                 var
+                    TransTarget: Record "BCX Translation Target";
+                    TransProject: Record "BCX Translation Project";
                     XliffParser: Codeunit "BCX Xliff Parser";
                     InS: InStream;
 
-                    TransTarget: Record "BCX Translation Target";
-                    TransProject: Record "BCX Translation Project";
-                    DeleteWarningTxt: Label 'This will overwrite existing Translation Target entries for %1 - %2';
-                    ImportedTxt: Label 'The file %1 has been imported into project %2';
+                    DeleteWarningTxt: Label 'This will overwrite existing Translation Target entries for %1 - %2', Comment = '%1: Project Code, %2: Target Language ISO code';
+                    ImportedTxt: Label 'The file %1 has been imported into project %2', Comment = '%1: File name, %2: Project Code';
                     FileName: Text;
                 begin
                     TransTarget.SetRange("Project Code", Rec."Project Code");
@@ -284,7 +295,7 @@ page 78602 "BCX Target Language List"
 
     begin
         // Set the project code to the filter value the page was called with
-        Rec."Project Code" := Rec.GetFilter("Project Code");
+        Rec."Project Code" := COPYSTR(FORMAT(Rec.GetFilter("Project Code")), 1, MAXSTRLEN(Rec."Project Code"));
     end;
 
 }

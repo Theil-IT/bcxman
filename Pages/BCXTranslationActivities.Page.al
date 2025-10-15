@@ -33,10 +33,12 @@ page 78613 "BCX Translation Activities"
                 Caption = 'Totals';
                 field("Projects this Month"; Rec."Projects this Month")
                 {
+                    ToolTip = 'Projects this Month - number of projects with activity this month';
                     ApplicationArea = All;
                 }
                 field("Total Projects"; Rec."Total Projects")
                 {
+                    ToolTip = 'Total Projects - total number of projects in the system';
                     ApplicationArea = All;
                 }
             }
@@ -47,9 +49,9 @@ page 78613 "BCX Translation Activities"
 
     trigger OnOpenPage()
     var
-        DateFilterTxt: Text;
-        DateFilterLbl: Label '%1..%2';
         UserAccess: Record "BCX User Access";
+        DateFilterTxt: Text;
+        DateFilterLbl: Label '%1..%2', Comment = '%1: Start date, %2: End date';
     begin
         if not Rec.Get() then begin
             Rec.Init();

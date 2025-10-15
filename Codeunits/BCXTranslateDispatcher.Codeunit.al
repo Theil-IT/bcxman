@@ -14,10 +14,12 @@ codeunit 78603 "BCX Translate Dispatcher"
 
         if CachedSetup."Use OpenAI" then
             exit(GPT.Translate(ProjectCode, SourceLang, TargetLang, TextToTranslate))
-        else if CachedSetup."Use DeepL" then
-            exit(DeepL.Translate(ProjectCode, SourceLang, TargetLang, TextToTranslate))
-        else if CachedSetup."Use Free Google Translate" then
-            exit(Google.Translate(ProjectCode, SourceLang, TargetLang, TextToTranslate));
+        else 
+            if CachedSetup."Use DeepL" then
+                exit(DeepL.Translate(ProjectCode, SourceLang, TargetLang, TextToTranslate))
+            else 
+                if CachedSetup."Use Free Google Translate" then
+                    exit(Google.Translate(ProjectCode, SourceLang, TargetLang, TextToTranslate));
     end;
 
     procedure UseChatGPT(): Boolean
