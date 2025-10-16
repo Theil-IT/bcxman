@@ -131,13 +131,11 @@ xmlport 78601 "BCX Export Translation Target"
     }
 
     var
-        TransNotes: Record "BCX Translation Notes";
         TransProject: Record "BCX Translation Project";
         ProjectCode: Code[20];
         SourceTransCode: Text[10];
         TargetTransCode: Text[10];
         EquivalentTransCode: Text[10];
-        MissingProjNameTxt: Label 'Project Name is Missing';
 
     trigger OnPreXmlPort()
     var
@@ -147,16 +145,18 @@ xmlport 78601 "BCX Export Translation Target"
         TransProject.Get(target.getfilter("Project Code"));
         TargetLanguage := TargetTransCode;
         TempFile := TransProject."File Name";
-        
+
         if StrPos(lowercase(TempFile), '.g.xlf') > 0 then
             currXMLport.Filename := CopyStr(TempFile, 1, StrPos(lowercase(TempFile), '.g.xlf')) +
                                      TargetLanguage + '.xlf'
-        else if StrPos(lowercase(TempFile), '.xlf') > 0 then
-            currXMLport.Filename := CopyStr(TempFile, 1, StrPos(lowercase(TempFile), '.xlf')) +
-                                     TargetLanguage + '.xlf'
-        else if StrPos(lowercase(TempFile), '.xlif') > 0 then
-            currXMLport.Filename := CopyStr(TempFile, 1, StrPos(lowercase(TempFile), '.xlif')) +
-                                     TargetLanguage + '.xlif';
+        else
+            if StrPos(lowercase(TempFile), '.xlf') > 0 then
+                currXMLport.Filename := CopyStr(TempFile, 1, StrPos(lowercase(TempFile), '.xlf')) +
+                                         TargetLanguage + '.xlf'
+            else
+                if StrPos(lowercase(TempFile), '.xlif') > 0 then
+                    currXMLport.Filename := CopyStr(TempFile, 1, StrPos(lowercase(TempFile), '.xlif')) +
+                                             TargetLanguage + '.xlif';
     end;
 
     procedure GetFilename(): Text
@@ -175,22 +175,13 @@ xmlport 78601 "BCX Export Translation Target"
         Target.Reset();
         Target.SetRange("Project Code", inProjectCode);
         Target.SetRange("Target Language ISO code", (InEquivalentLang <> '') ? InEquivalentLang : InTargetLang);
+#pragma warning disable AA0206
         ProjectCode := inProjectCode;
+#pragma warning restore AA0206
         SourceTransCode := InSourceLang;
         TargetTransCode := InTargetLang;
         EquivalentTransCode := InEquivalentLang;
     end;
 
-    local procedure CreateTranNote()
-    begin
-        if (TransNotes.From <> '') and
-           (TransNotes.Annotates <> '') and
-           (TransNotes.Priority <> '') then begin
-            TransNotes."Project Code" := ProjectCode;
-            TransNotes."Trans-Unit Id" := Target."Trans-Unit Id";
-            if TransNotes.Insert() then;
-            clear(TransNotes);
-        end;
-    end;
 }
 

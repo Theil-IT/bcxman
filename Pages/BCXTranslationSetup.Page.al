@@ -38,24 +38,35 @@ page 78607 "BCX Translation Setup"
                 {
                     ShowCaption = false;
 
-                    field("Use ChatGPT"; Rec."Use OpenAI") { }
+                    field("Use ChatGPT"; Rec."Use OpenAI") 
+                    { 
+                        ToolTip = 'Use the OpenAI API for translation.'; 
+                        ApplicationArea = All;
+                    }
                     field("ChatGPT API Key"; Rec."OpenAI API Key")
                     {
+                        ToolTip = 'API key for accessing the OpenAI API.';
                         ApplicationArea = All;
                         ExtendedDatatype = Masked;
 
                     }
                     field("ChatGPT Model"; Rec."OpenAI Model")
                     {
+                        ToolTip = 'Model to use for the OpenAI API.';
                         ApplicationArea = All;
                     }
                 }
                 group("DeepL")
                 {
                     ShowCaption = false;
-                    field("Use DeepL"; Rec."Use DeepL") { }
+                    field("Use DeepL"; Rec."Use DeepL") 
+                    { 
+                        ToolTip = 'Use the DeepL API for translation.'; 
+                        ApplicationArea = All;
+                    }
                     field("DeepL API Key"; Rec."DeepL API Key")
                     {
+                        ToolTip = 'API key for accessing the DeepL API.';
                         ApplicationArea = All;
                         ExtendedDatatype = Masked;
 
@@ -74,6 +85,8 @@ page 78607 "BCX Translation Setup"
         {
             action("About Al Translation Tool")
             {
+                Caption = 'About AL Translation Tool';
+                ToolTip = 'Learn more about the AL Translation Tool.';
                 RunObject = page "BCX About AL Translation Tool";
                 Image = AboutNav;
                 Promoted = true;
@@ -84,6 +97,8 @@ page 78607 "BCX Translation Setup"
 
             action("Initialize ISO Languages")
             {
+                Caption = 'Initialize ISO Languages';
+                ToolTip = 'Initialize or update the ISO language codes in the Language table based on standard mappings.';
                 Image = Language;
                 Promoted = true;
                 PromotedOnly = true;

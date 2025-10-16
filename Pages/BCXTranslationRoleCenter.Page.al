@@ -21,6 +21,7 @@ page 78614 "BCX Translation Role Center"
             action(Setup)
             {
                 Caption = 'Translation Setup';
+                ToolTip = 'Open the translation setup page.';
                 RunObject = Page "BCX Translation Setup";
                 ApplicationArea = All;
             }
@@ -41,6 +42,8 @@ page 78614 "BCX Translation Role Center"
         {
             action("Translation Projects")
             {
+                Caption = 'Translation Projects';
+                ToolTip = 'Open the list of translation projects.';
                 ApplicationArea = All;
                 RunObject = Page "BCX Trans Project List";
             }

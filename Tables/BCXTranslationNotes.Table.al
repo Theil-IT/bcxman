@@ -5,7 +5,7 @@ table 78604 "BCX Translation Notes"
 
     fields
     {
-        field(10; "Project Code"; code[10])
+        field(10; "Project Code"; code[20])
         {
             DataClassification = AccountData;
             Caption = 'Project Code';

@@ -130,9 +130,6 @@ table 78600 "BCX Translation Project"
         }
     }
 
-    var
-        TransProject: Record "BCX Translation Project";
-
     trigger OnInsert()
     var
         TransSetup: Record "BCX Translation Setup";

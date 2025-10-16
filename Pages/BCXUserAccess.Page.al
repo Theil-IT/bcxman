@@ -14,21 +14,25 @@ page 78612 "BCX User Access"
             {
                 field("Project Code"; Rec."Project Code")
                 {
+                    ToolTip = 'Specifies the unique code for the translation project.';
                     ApplicationArea = All;
 
                 }
                 field("User Id"; Rec."User Id")
                 {
+                    ToolTip = 'Specifies the unique identifier for the user.';
                     ApplicationArea = All;
 
                 }
                 field("Project Name"; Rec."Project Name")
                 {
+                    ToolTip = 'Specifies the name of the translation project.';
                     ApplicationArea = All;
 
                 }
                 field("User Name"; Rec."User Name")
                 {
+                    ToolTip = 'Specifies the name of the user.';
                     ApplicationArea = All;
 
                 }

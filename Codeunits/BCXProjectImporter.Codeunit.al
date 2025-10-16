@@ -4,7 +4,7 @@ codeunit 78604 "BCX Project Importer"
 
 
 
-    procedure ImportFromZip(ProjectCode: Code[10]; SourceLangIso: Text[10]; Overwrite: Boolean)
+    procedure ImportFromZip(ProjectCode: Code[20]; SourceLangIso: Text[10]; Overwrite: Boolean)
     var
         TransSource: Record "BCX Translation Source";
         BaseNotes: Record "BCX Base Translation Notes";
@@ -261,7 +261,7 @@ codeunit 78604 "BCX Project Importer"
     end;
 
 
-    local procedure ImportSourceFromStream(ProjectCode: Code[10]; FileName: Text; var InS: InStream)
+    local procedure ImportSourceFromStream(ProjectCode: Code[20]; FileName: Text; var InS: InStream)
     var
         TransProject: Record "BCX Translation Project";
         XliffParser: Codeunit "BCX Xliff Parser";
@@ -276,7 +276,7 @@ codeunit 78604 "BCX Project Importer"
         end;
     end;
 
-    local procedure ImportBaseTargetFromStream(ProjectCode: Code[10]; SrcLang: Text[10]; TgtLang: Text[10]; FileName: Text; var InS: InStream)
+    local procedure ImportBaseTargetFromStream(ProjectCode: Code[20]; SrcLang: Text[10]; TgtLang: Text[10]; FileName: Text; var InS: InStream)
     var
         XliffParser: Codeunit "BCX Xliff Parser";
     begin
@@ -284,7 +284,7 @@ codeunit 78604 "BCX Project Importer"
     end;
 
 
-    local procedure ImportTargetFromStream(ProjectCode: Code[10]; SrcLang: Text[10]; TgtLang: Text[10]; FileName: Text; var InS: InStream)
+    local procedure ImportTargetFromStream(ProjectCode: Code[20]; SrcLang: Text[10]; TgtLang: Text[10]; FileName: Text; var InS: InStream)
     var
         XliffParser: Codeunit "BCX Xliff Parser";
     begin

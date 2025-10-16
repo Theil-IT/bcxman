@@ -22,6 +22,7 @@ page 78600 "BCX Trans Project List"
                 }
                 field("Project Name"; Rec."Project Name")
                 {
+                    ToolTip = 'The name of the translation project.';
                     ApplicationArea = All;
 
                 }
@@ -32,30 +33,37 @@ page 78600 "BCX Trans Project List"
                 }
                 field("NAV Version"; Rec."NAV Version")
                 {
+                    ToolTip = 'The NAV version for the translation project.';
                     ApplicationArea = All;
                 }
                 field("File Name"; Rec."File Name")
                 {
+                    ToolTip = 'The name of the file associated with the translation project.';
                     ApplicationArea = All;
                 }
                 field("Source Language"; Rec."Source Language")
                 {
+                    ToolTip = 'The source language for the translation project.';
                     ApplicationArea = All;
                 }
                 field("Source Language ISO code"; Rec."Source Language ISO code")
                 {
+                    ToolTip = 'The ISO code of the source language for the translation project.';
                     ApplicationArea = All;
                 }
                 field("Created By"; Rec."Created By")
                 {
+                    ToolTip = 'The user who created the translation project.';
                     ApplicationArea = All;
                 }
                 field("Creation Date"; Rec."Creation Date")
                 {
+                    ToolTip = 'The date when the translation project was created.';
                     ApplicationArea = All;
                 }
                 field("Base Translation Imported"; Rec."Base Translation Imported")
                 {
+                    ToolTip = 'Indicates whether the base translation has been imported for the project.';
                     ApplicationArea = All;
                 }
             }
@@ -70,6 +78,7 @@ page 78600 "BCX Trans Project List"
             {
                 ApplicationArea = All;
                 Caption = 'Import Project';
+                ToolTip = 'Import a translation project from a ZIP file.';
                 Image = ImportCodes;
                 Promoted = true;
                 PromotedOnly = true;
@@ -87,6 +96,7 @@ page 78600 "BCX Trans Project List"
             {
                 ApplicationArea = All;
                 Caption = 'Import Source';
+                ToolTip = 'Import translation source from an XLIFF file.';
                 Image = ImportCodes;
                 Promoted = true;
                 PromotedOnly = true;
@@ -96,12 +106,12 @@ page 78600 "BCX Trans Project List"
                 var
                     TransSource: Record "BCX Translation Source";
                     TransNotes: Record "BCX Translation Notes";
-                    DeleteWarningTxt: Label 'This will overwrite the Translation source for %1';
                     TransProject: Record "BCX Translation Project";
                     XliffParser: Codeunit "BCX Xliff Parser";
+                    DeleteWarningTxt: Label 'This will overwrite the Translation source for %1', Comment = 'Warning message when importing translation source that will overwrite existing source. %1 is Project Code';
                     FileName: Text;
                     InS: InStream;
-                    ImportedTxt: Label 'The file %1 has been imported into project %2';
+                    ImportedTxt: Label 'The file %1 has been imported into project %2', Comment = 'Message shown when a file has been successfully imported. %1 is the file name, %2 is the project code';
                 begin
                     TransSource.SetRange("Project Code", Rec."Project Code");
                     TransNotes.SetRange("Project Code", Rec."Project Code");
@@ -129,6 +139,7 @@ page 78600 "BCX Trans Project List"
             {
                 ApplicationArea = All;
                 Caption = 'Target Languages';
+                ToolTip = 'Manage target languages for the translation project.';
                 Image = Language;
                 Promoted = true;
                 PromotedOnly = true;
@@ -142,6 +153,7 @@ page 78600 "BCX Trans Project List"
             {
                 ApplicationArea = All;
                 Caption = 'Translation Source';
+                ToolTip = 'View and manage translation source entries for the project.';
                 Image = SourceDocLine;
                 Promoted = true;
                 PromotedOnly = true;
@@ -152,6 +164,7 @@ page 78600 "BCX Trans Project List"
             action("General Translation Terms")
             {
                 Caption = 'General Translation Terms';
+                ToolTip = 'View and manage general translation terms for the project.';
                 ApplicationArea = All;
                 Image = BeginningText;
                 Promoted = true;
@@ -164,6 +177,7 @@ page 78600 "BCX Trans Project List"
             action("All Translation Targets")
             {
                 Caption = 'All Translation Targets';
+                ToolTip = 'View all translation targets for the project.';
                 ApplicationArea = All;
                 Image = Translate;
                 Promoted = true;

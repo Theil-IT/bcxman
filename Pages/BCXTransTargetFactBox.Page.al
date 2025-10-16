@@ -16,6 +16,7 @@ page 78605 "BCX Trans Target Factbox"
                 field(Instances; Instances)
                 {
                     Caption = 'Instances';
+                    ToolTip = 'Number of instances of this target language in the translation source for the selected project.';
                     ApplicationArea = All;
                 }
             }
@@ -24,16 +25,19 @@ page 78605 "BCX Trans Target Factbox"
                 field(TotalCaptions; TotalCaptions)
                 {
                     Caption = 'Total Captions';
+                    ToolTip = 'Total number of captions in the translation target for the selected project.';
                     ApplicationArea = all;
                 }
                 field(TotalMissingTranslations; TotalMissingTranslations)
                 {
                     Caption = 'Total Missing Translations';
+                    ToolTip = 'Total number of missing translations in the translation target for the selected project.';
                     ApplicationArea = all;
                 }
                 field(TotalMissingCaptions; TotalMissingCaptions)
                 {
                     Caption = 'Total Missing Captions';
+                    ToolTip = 'Total number of missing captions in the translation target for the selected project.';
                     ApplicationArea = all;
                 }
             }

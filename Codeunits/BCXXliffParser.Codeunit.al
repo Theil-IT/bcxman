@@ -2,22 +2,22 @@ codeunit 78605 "BCX Xliff Parser"
 {
 
     // Public entry points for the three import types the XMLPorts used to handle
-    procedure ImportSourceFromStream(ProjectCode: Code[10]; FileName: Text; var InS: InStream)
+    procedure ImportSourceFromStream(ProjectCode: Code[20]; FileName: Text; var InS: InStream)
     begin
         ParseAndInsert(ProjectCode, FileName, InS, 'Source', '', '');
     end;
 
-    procedure ImportBaseTargetFromStream(ProjectCode: Code[10]; SourceLangISO: Text[10]; TargetLangISO: Text[10]; FileName: Text; var InS: InStream)
+    procedure ImportBaseTargetFromStream(ProjectCode: Code[20]; SourceLangISO: Text[10]; TargetLangISO: Text[10]; FileName: Text; var InS: InStream)
     begin
         ParseAndInsert(ProjectCode, FileName, InS, 'BaseTarget', SourceLangISO, TargetLangISO);
     end;
 
-    procedure ImportTargetFromStream(ProjectCode: Code[10]; SourceLangISO: Text[10]; TargetLangISO: Text[10]; FileName: Text; var InS: InStream)
+    procedure ImportTargetFromStream(ProjectCode: Code[20]; SourceLangISO: Text[10]; TargetLangISO: Text[10]; FileName: Text; var InS: InStream)
     begin
         ParseAndInsert(ProjectCode, FileName, InS, 'Target', SourceLangISO, TargetLangISO);
     end;
 
-    local procedure ParseAndInsert(ProjectCode: Code[10]; FileName: Text; var InS: InStream; Mode: Text; SourceLangISO: Text[10]; TargetLangISO: Text[10])
+    local procedure ParseAndInsert(ProjectCode: Code[20]; FileName: Text; var InS: InStream; Mode: Text; SourceLangISO: Text[10]; TargetLangISO: Text[10])
     var
         RecSource: Record "BCX Translation Source";
         RecTarget: Record "BCX Translation Target";

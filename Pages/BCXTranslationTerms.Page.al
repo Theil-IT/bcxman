@@ -42,6 +42,7 @@ page 78606 "BCX Translation terms"
             {
                 ApplicationArea = All;
                 Caption = 'Copy From General Terms';
+                ToolTip = 'Copy translation terms from the general terms list.';
                 Image = ReminderTerms;
                 Promoted = true;
                 PromotedOnly = true;
@@ -57,7 +58,7 @@ page 78606 "BCX Translation terms"
                     if GenTransTerm.FindSet() then
                         repeat
                             TransTerm.TransferFields(GenTransTerm);
-                            TransTerm."Project Code" := Rec.GetFilter("Project Code");
+                            TransTerm."Project Code" := CopyStr(Rec.GetFilter("Project Code"), 1, 10);
                             if TransTerm.Insert() then;
                         until GenTransTerm.Next() = 0;
                 end;
@@ -66,6 +67,7 @@ page 78606 "BCX Translation terms"
             {
                 ApplicationArea = All;
                 Caption = 'Add to General Terms';
+                ToolTip = 'Add the current term to the general terms list.';
                 Promoted = true;
                 PromotedOnly = true;
                 PromotedIsBig = true;
